@@ -1,0 +1,2 @@
+{"marca" : "FateO", "medidas" : "195-55-R18", "precio" : 59666, "id" : 7, "pathFoto" : "./neumaticos/imagenes/FateO.150114.jpg"}
+{"marca" : "Fate", "medidas" : "195-55-R18", "precio" : 59666, "id" : 14, "pathFoto" : "./neumaticos/imagenes/Fate.073007.jpg"}
