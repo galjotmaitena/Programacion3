@@ -1,2 +1,3 @@
 {"marca" : "FateO", "medidas" : "195-55-R18", "precio" : 59666, "id" : 7, "pathFoto" : "./neumaticos/imagenes/FateO.150114.jpg"}
 {"marca" : "Fate", "medidas" : "195-55-R18", "precio" : 59666, "id" : 14, "pathFoto" : "./neumaticos/imagenes/Fate.073007.jpg"}
+{"marca" : "renault", "medidas" : "40cm", "precio" : 3500, "id" : 31, "pathFoto" : "./neumaticos/imagenes/renault.035232.jpg"}

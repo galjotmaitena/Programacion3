@@ -4,9 +4,19 @@ use Galjot\Maitena\Neumatico;
 
 require_once "./clases/neumatico.php";
 
-$arrayNeumaticos = Neumatico::traerJSON("./archivos/neumaticos.json");
-//var_dump($arrayNeumaticos);
-foreach($arrayNeumaticos as $neumatico)
+/* listadoNeumaticosJSON.php: (GET) Se mostrará el listado de todos los neumáticos en formato JSON (traerJSON).
+Pasarle './archivos/neumaticos.json' cómo parámetro. */
+
+$arrayNeumaticos = array();
+
+foreach(Neumatico::traerJSON("./archivos/neumaticos.json") as $neumatico)
 {
-    echo $neumatico->toJSON() . "\n";
+    $objStd = new stdClass();
+    $objStd->marca = $neumatico->getMarca();
+    $objStd->medidas = $neumatico->getMedidas();
+    $objStd->precio = $neumatico->getPrecio();
+
+    array_push($arrayNeumaticos, $objStd);
 }
+
+echo json_encode($arrayNeumaticos);
